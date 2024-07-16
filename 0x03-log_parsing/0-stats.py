@@ -6,9 +6,8 @@ import re
 
 
 def output(lg: dict) -> None:
-    """
-    helper function to display stats
-    """
+    """output"""
+    
     print("File size: {}".format(lg["file_size"]))
     for code in sorted(lg["code_frequency"]):
         if lg["code_frequency"][code]:
